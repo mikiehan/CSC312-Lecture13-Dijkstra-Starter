@@ -222,7 +222,11 @@ public class DijkstraSP {
 
         @Override
         public int hashCode() {
-            return Integer.hashCode(v); //only look at vertex, not distance (pq doesn't use hashCode but...)
+            return Integer.hashCode(v); //only look at vertex, not distance (pq doesn't use hashCode anyways
+            // but it's a good practice that when you override equals you also override hashCode accordingly...
+            // and Dr. Han will be asking you this question "so... what method you should override as well
+            // when you override equals?" when I bump into you in streets in 10 years...
+            // I should sleep now...
         }
     }
 
